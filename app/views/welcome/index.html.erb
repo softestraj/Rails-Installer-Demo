@@ -1,1 +1,8 @@
-<h1>Welcome to Rails installer Demo</h1>
+<%
+@comments = Comment.find(:all)
+@comments.each do |comment|
+%>
+<%=comment.id%>
+<%
+end
+%>
